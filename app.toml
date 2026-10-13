@@ -1,0 +1,13 @@
+[app]
+name = "hello-world"
+lean_bsp_contract_version = "1.0"
+version = "0.1.0"
+default_bsp = "linux-host"           # optional: which BSP to use when --bsp is not given
+
+[app.requires]                       # subset of bsp.primitives this app cannot do without
+uart = true
+
+[app.sources]
+files = ["app_main.c"]
+include_dirs = ["."]
+defines = []                         # e.g. HELLO_RESET_WAIT_MS=0 to skip the reset test
