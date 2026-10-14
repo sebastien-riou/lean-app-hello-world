@@ -1,6 +1,6 @@
 [app]
 name = "hello-world"
-lean_bsp_contract_version = "1.0"
+lean_bsp_contract_version = "1.1"
 version = "0.1.0"
 default_bsp = "linux-host"           # optional: which BSP to use when --bsp is not given
 
